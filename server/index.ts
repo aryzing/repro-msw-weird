@@ -5,7 +5,6 @@ const app = express();
 
 app.use(cookieParser());
 app.use(cors({ credentials: true }));
-// app.use(cors({ origin: true, credentials: true }))
 
 app.post("/", (req, res) => {
   console.log("Server received cookies:", JSON.stringify(req.cookies, null, 2));
